@@ -45,5 +45,5 @@ user.greeting=function(){
 user.greetingTwo=function(){
     console.log(`Hello ${user.name}`)
 }
-console.log(user.greeting())
-console.log(user.greetingTwo())
+// console.log(user.greeting())
+// console.log(user.greetingTwo())

@@ -52,12 +52,43 @@ const us=[
         email:"us@gmail.com"
     },
 ]
-console.log(us[1].email)
+// console.log(us[1].email)
 
-console.log(tinderUser)
-console.log(Object.keys(tinderUser)) //returns array of keys
-console.log(Object.values(tinderUser)) //returns array of values
-console.log(Object.entries(tinderUser)) //return array with array of key value pair as entries
+// console.log(tinderUser)
+// console.log(Object.keys(tinderUser)) //returns array of keys
+// console.log(Object.values(tinderUser)) //returns array of values
+// console.log(Object.entries(tinderUser)) //return array with array of key value pair as entries
 
 //to check if a property is available or not
-console.log(tinderUser.hasOwnProperty("isLoggedIn"))
+// console.log(tinderUser.hasOwnProperty("isLoggedIn"))
+
+//DESTRUCTORING
+
+const course ={
+    coursename: "JS",
+    price:"999",
+    courseInstructor:"Hitesh"
+}
+
+// course.courseInstructor
+
+
+//better approach to extract values (destructoring)
+const {courseInstructor:ins}=course
+// console.log(ins)
+
+
+//APIs
+//JSON
+//sometimes we get response as object
+// {
+//     "name":"shan",
+//     "course":"js",
+//     "price":"free"
+// }
+//sometimes we get response as arrays
+// [
+//     {},
+//     {},
+//     {}
+// ]
