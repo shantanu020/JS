@@ -9,18 +9,20 @@ const dc_hero=["flash","batman","superman"]
 // const allHeroes=heroes.concat(dc_hero) //merges the arrays properly
 // console.log(allHeroes)
 
+//better approach is using ....
 const all_new_heroes=[...heroes,...dc_hero]
 // console.log(all_new_heroes)
 
 const arr4=[1,2,3,[4,5,6],7,[8,9,0,[1,2]]]
 // console.log(arr4)
 //to solve above problem use flat()
-const arr5=arr4.flat(Infinity) //converts array of array into single array flat methods take depth as parameter
+const arr5=arr4.flat(Infinity) //converts array of arrays into single array, flat methods take depth as parameter
 // console.log(arr5)
 
 // console.log(Array.isArray("Shantanu")) //to check if something is array or not
 
-// console.log(Array.from("Shantanu"))
+// console.log(Array.from("Shantanu")) //converts something into array
+
 
 // console.log(Array.from({name:"Shantanu"})) //interesting  empty array
 
