@@ -41,3 +41,43 @@ function loginUser(username="sam"){
     return `${username} just logged in`
 }
 // console.log(loginUser())
+
+
+//if you don't know the limit of number of item eg. Shopping cart
+
+// function calCartPrice(num1){
+//     return num1
+// }
+// console.log(calCartPrice(200,300,400))
+
+//solution is using rest operator ...
+function calCartPrice(val1,val2,...num1){
+    return num1
+}
+// console.log(calCartPrice(200,300,400,500,600))
+
+
+//function taking object as param
+
+const product={
+    prod:"boscuit",
+    price:100
+}
+function handleObj(obj){
+    console.log(`product is ${obj.prod} and price is ${obj.price}`)
+}
+// console.log(handleObj(product))
+// console.log(handleObj({
+//     prod:"gaming console",
+//     price:50000
+// }))
+
+
+//function taking array as param
+
+const arr=[200,300,400,500]
+function handleArray(anyarr){
+    return anyarr[1]
+}
+// console.log(handleArray(arr))
+// console.log(handleArray([1,2,3,4,5,6,7,8,9]))
