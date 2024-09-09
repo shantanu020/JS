@@ -1,0 +1,45 @@
+JavaScript is a single threaded language
+JavaScript Execution Context
+->GCE-Global Execution Context (this)
+->function/functional Execution Context
+->Eval Execution Context
+
+JavaScript code execute in two phases
+1. Memory creation phase(Memory allocation)
+2. Execution phase
+
+steps in code Execution
+(MEMORY PHASE)
+1. Global Execution (this)
+2. Memory Phase (val1->undefined)
+3. function->definition
+4. result->variable
+
+(EXECUTION PHASE)
+1. val1<-10
+2. function-> new variable environment + Execution thread (New Execution Context)
+
+now there will be two phase for the function (creation and Execution phase)
+
+(Memory phase)
+val1->undefined
+total->undefined
+
+(Execution phase)
+num1->10
+total->10 (return to parent Execution context)
+the new execution context will be deleted after returning value
+
+
+
+Call Stack
+LIFO
+
+|                |   
+|                |   
+|                |   
+|                |   
+|Global Execution|
+
+summary
+a new Execution context will be created each time a function gets called
