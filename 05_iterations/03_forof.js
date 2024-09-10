@@ -12,16 +12,31 @@
 //     console.log(greet);
 // }
 //++++++++++++++++++++++++++++++++++
-//maps used to hold key value pair, prevents the insertion order of keys. any value both objects and primitives may be used as either key or value
+//map objects are used to hold key value pairs, prevents the insertion order of keys. any value both objects and primitives may be used as either key or value
 //contains only unique values
 
-const map=new Map()
-map.set('IN',"India")
-map.set('USA',"United States of America")
-map.set('IN',"India")
+// const map=new Map()
+// map.set('IN',"India")
+// map.set('USA',"United States of America")
+// map.set('IN',"India")
+
+//below loop will print the key value pair as a array
 // for(const ele of map){
 //     console.log(ele)
 // }
+
+//destructing of array
 // for(const [key,value] of map){
 //     console.log(key, ':-', value);
 // }
+
+//++++++++++++++++++++++++++++
+// const obj={
+//     'game1':'NFS',
+//     'game2':'CS'
+// }
+
+// for(const [key,value] of obj){
+//     console.log(key,' :- ',value)
+// }
+//above code will generate error as objects are not iterable 
