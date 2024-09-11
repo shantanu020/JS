@@ -17,4 +17,29 @@
     </div>
     
 </body>
+<script>
+    const parent =document.querySelector('.parent');
+    // console.log(parent);
+    // console.log(parent.children[0].innerHTML);
+    //parent.children returns HTMLCollection
+    for (let i = 0; i < parent.children.length; i++) {
+        console.log(parent.children[i].innerHTML);
+    }
+    parent.children[0].style.color='red';
+    //to select firstElementChild
+    // console.log(parent.firstElementChild) //monday element
+    //to select lastElementChild
+    // console.log(parent.lastElementChild) //friday element
+    //to select parent from the child
+    const child=document.querySelector('.day')
+    // console.log(child.parentElement) //parent element
+    //to select the nextElementSibling
+    const sibling=child.nextElementSibling;
+    // console.log(sibling) //tuesday element
+
+    //parent.childNodes can be used to get a NodeList representing complete tree structure of parent element (complex tree structure)
+    console.log("NODES: ",parent.childNodes)
+
+   
+</script>
 </html>
