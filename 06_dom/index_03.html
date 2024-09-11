@@ -1,0 +1,31 @@
+<!-- how to create new element in DOM -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur Code</title>
+</head>
+<body style="background-color: #212121; color:white">
+    
+</body>
+<script>
+    //use document.createElement to create a new element
+    const div=document.createElement('div')
+    console.log(div);
+    //use setAttributes to set attributes
+    div.setAttribute('class','box')
+    div.id=Math.round(Math.random()*10+1)
+    div.title="new title"
+    div.style.backgroundColor='orange';
+    // div.innerText="My name is Shantanu"
+    //above method first fetch then set
+    //below approach is optimized as we are creating a new text node 
+    const addText=document.createTextNode('chai aur code')
+    div.appendChild(addText)
+    div.style.color="white"
+    console.log(div)
+    // now attach div to document
+    document.body.appendChild(div)
+</script>
+</html>
