@@ -6,9 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>chai aur code</title>
 </head>
-<body>
+<body style="background-color: #212121; color:white">
     <ul class="language">
         <li>javaScript</li>
     </ul>
 </body>
+<script>
+
+    //CREATE
+    //use createElement() to create new element
+    function addLang(langname){
+        const li=document.createElement('li');
+        li.setAttribute('class','lang')
+        li.innerHTML=`${langname}`;
+        const ul=document.querySelector('.language')
+        ul.appendChild(li)
+    }
+    addLang("python");
+    addLang("typescript");
+    //optimized way better approach
+    function addOpti(name){
+        const li=document.createElement('li');
+        li.setAttribute('class','lang')
+        const text=document.createTextNode(`${name}`);
+        li.appendChild(text);
+        const ul=document.querySelector('.language')
+        ul.appendChild(li);
+    }
+    addOpti('java')
+    addOpti('C++')
+
+    //EDIT
+    //use replaceWith() or outerHTML to edit a HTML element
+    const secondLang=document.querySelector("li:nth-child(2)")
+    const newli=document.createElement('li')
+    const text=document.createTextNode('Mojo')
+    newli.appendChild(text)
+    secondLang.replaceWith(newli)
+
+    const firstLang=document.querySelector('li:nth-child(1)')
+    firstLang.outerHTML='<li>TypeScript<li>'
+
+    //REMOVE
+    //use remove() to remove any element from dom
+    const lastLang=document.querySelector('li:last-child')
+    lastLang.remove();
+
+
+</script>
 </html>
