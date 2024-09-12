@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color-Changer</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="wrapper" id="parent">
+      <h1 class="heading">Color Scheme Switcher</h1>
+      <div class="container">
+        <button class="color" id="grey" onclick="changeColor('grey')"></button>
+        <button
+          class="color"
+          id="white"
+          onclick="changeColor('white')"
+        ></button>
+        <button class="color" id="blue" onclick="changeColor('blue')"></button>
+        <button
+          class="color"
+          id="yellow"
+          onclick="changeColor('yellow')"
+        ></button>
+      </div>
+      <h1 class="text">
+        Try clicking on one of the colors above <br />
+        to change the background color of
+        <br />this page!
+      </h1>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
