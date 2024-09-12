@@ -6,7 +6,7 @@
 .container{
     height: 100vh;
     width: 100vw;
-    background-color: beige;
+    background-image: linear-gradient(132deg, rgb(251, 251, 255) 0.00%, rgb(215, 223, 252) 100.00%);
     color:black;
     display: flex;
     flex-direction: column;
