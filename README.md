@@ -1,4 +1,4 @@
 # JS
 A code repo for JavaScript
 
-# Shantanu Yadav
+# Author: Shantanu Yadav
