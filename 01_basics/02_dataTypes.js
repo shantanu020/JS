@@ -1,6 +1,6 @@
 "use strict"; //treat all Js code as newer version
 // alert("hello") we are using NodeJs, not browser
-//codde readability should be high
+//code readability should be high
 let name="Shantanu"
 let age=19
 let isLoggedIn=true
