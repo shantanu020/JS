@@ -49,11 +49,11 @@
 // let val1;
 // val1=5??10
 // val1=null??10
-//is value is null it will assign null else it will assign the returmed value by function
+//if value is null it will assign null the rhs value else it will assign the returned value by function
 
 //same concept is for undefined
-// val1=undefined??10??20 //first not null/undefined value will be assigned
-// console.log(val1)
+val1=undefined??10??20 //first not null/undefined value will be assigned
+console.log(val1)
 
 //+++++++++++++++++++++
 

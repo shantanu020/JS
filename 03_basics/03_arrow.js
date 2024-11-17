@@ -43,6 +43,6 @@ const chai=()=>{
 //function name=(params)=>(return value)
 
 //returning object
-//  const add=(num1,num2)=>({
-//     username:"shan"})
-//  console.log(add(2,9))
+ const add=(num1,num2)=>({
+    username:"shan"})
+ console.log(add(2,9))

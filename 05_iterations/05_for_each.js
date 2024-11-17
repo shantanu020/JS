@@ -32,7 +32,7 @@
 //         age:19
 //     }
 // ]
-//to print whole obj inside arr
+//to print obj present inside an arr
 // arr.forEach((obj)=>{console.log(obj)})
 //to just print a property of the object
 // arr.forEach((obj)=>{console.log(obj.name)})

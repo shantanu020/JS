@@ -3,7 +3,7 @@
 const arr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 //arrays in javascript are hetrogenous and resizable but are not associative arrays
-//JavaScrip array copy creation creates shallow copies of array (same reference)
+//JavaScript array copy creation creates shallow copies of array (same reference)
 
 const Heroes =["Shaktiman","naagraj"]
 
