@@ -1,4 +1,4 @@
-//reduce methode executes a user supplied reducer : reduce((accumulator, currentValue) => accumulator + currentValule, initialValue)
+//reduce methode executes a user supplied reducer : reduce((accumulator, currentValue) => accumulator + currentValue, initialValue)
 
 //accumulator is empty variable with initialValue 0 it is used to accumulate result;
 //currentValue holds the current value of the array

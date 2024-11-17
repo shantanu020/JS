@@ -4,7 +4,7 @@
 //for of loop is used to iterate over elements of an array, string and map but not the objects
 //In case of array it returns an element per iteration
 //In case of String it returns a char per iteration
-//In case of map it returns key value pair as an array but we can destructor the array by using [key, value] inside loop in place of key
+//In case of map it returns key value pair as an array but we can destruct the array by using [key, value] inside loop in place of key
 //objects can't be iterated using for of loop
 
 //for in:-
