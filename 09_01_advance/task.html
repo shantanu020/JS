@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub User Card</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100vw;
+        }
+        .card{
+            height: 500px;
+            width: 400px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        .img{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .img img{
+            padding: 20px;
+            width: 300px;
+            height: 300px;
+        }
+        .text-content{
+            text-align: center;
+        }
+        .followers {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        .get-data {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="img"></div>
+            <div class="text-content">
+                <span class="followers"></span><br>
+                <button class="get-data">GET DATA</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const requestUrl = 'https://api.github.com/users/hiteshchoudhary';
+        const xhr = new XMLHttpRequest();
+        xhr.open('GET', requestUrl);
+
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                const img = document.querySelector('.img');
+                const followers = document.querySelector('.followers');
+                const data = JSON.parse(xhr.responseText);
+                const url = data.avatar_url;
+
+                img.innerHTML = `<img src="${url}" alt="Avatar">`;
+
+                const btn = document.querySelector('.get-data');
+                btn.addEventListener('click', function() {
+                    followers.innerHTML = `Followers: ${data.followers}`;
+                    btn.style.visibility = 'hidden';
+                });
+            }
+        };
+
+        xhr.send();
+    </script>
+</body>
+</html>
