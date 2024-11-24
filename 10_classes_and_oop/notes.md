@@ -28,3 +28,5 @@ Encapsulation
 Inheritance
 Polymorphishm
 
+# Prototypes and objects
+![alt text](image.png)
