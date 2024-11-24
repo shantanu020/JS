@@ -30,3 +30,6 @@ Polymorphishm
 
 # Prototypes and objects
 ![alt text](image.png)
+
+# Call
+![alt text](image-1.png)
