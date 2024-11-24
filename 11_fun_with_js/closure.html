@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="orange">Orange</button>
+    <button id="green">Green</button>
+    
+</body>
+<script>
+    
+    function outer(){
+        let username='shan'
+        function inner(){
+            let secret='my123'
+            console.log('inner',username);
+            // username is available inside the inner function
+            // lexical scoping
+        }
+        function innertwo(){
+            console.log('innertwo',username);
+            // console.log(secret);
+            // not defined
+            
+        }
+        // inner();
+        // innertwo();
+        
+        // console.log('OUTER',secret);
+        // not defined
+    }
+    // outer();
+
+    // console.log('Too outer',username);
+    // username is not defined in outerspace
+    
+
+
+    // function init() {
+    //     let name = "Mozilla"; 
+    //     function displayName() {
+    //         console.log(name); 
+    //     }
+    //     displayName();
+    // }
+    // init();
+
+
+    // closure
+
+    // function makeFunc() {
+    //     const name = "Mozilla";
+    //     function displayName() {
+    //         console.log(name);
+    //     }
+    //     return displayName;
+    //     // outer function will also go with displayName i.e whole lexical scope of displayName
+    // }
+    // const myFunc = makeFunc();
+    // myFunc();
+
+    // closure use case
+
+    function clickHandler(color){
+        // document.body.style.backgroundColor=color
+        // If you call the function directly (without returning another function), the function executes immediately during the assignment and the event listener won’t work properly.
+        return function(){
+            document.body.style.backgroundColor=color
+            // inner function has acces to the color due to lexical scoping
+            // By returning a new function from clickHandler, you create a closure. A closure allows the inner function to "remember" the variables (in this case, color) from its lexical scope, even after clickHandler has finished executing.
+            // The closure allows the inner function to remember the color argument even after the outer function (clickHandler) has finished executing.
+        }   
+    }
+    document.getElementById('orange').onclick=clickHandler('orange')
+    document.getElementById('green').onclick=clickHandler('green')
+
+</script>
+<script>
+
+</script>
+</html>
